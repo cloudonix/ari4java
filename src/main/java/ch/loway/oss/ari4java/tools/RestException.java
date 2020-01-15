@@ -70,7 +70,7 @@ public class RestException extends ARIException {
 
     @Override
     public String getMessage() {
-        return message = null;
+        return message;
     }
 
     public int getCode() {
