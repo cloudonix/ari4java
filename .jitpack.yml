@@ -1,4 +1,5 @@
 jdk:
   - openjdk10
-before_install:
-  - ./gradlew :codegen:runCodegen buildProps
+install:
+  - echo "Running a custom install command"
+  - ./gradlew clean :codegen:runCodegen buildProps build
