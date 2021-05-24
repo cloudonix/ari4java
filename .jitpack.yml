@@ -2,4 +2,6 @@ jdk:
   - openjdk10
 install:
   - echo "Running a custom install command"
-  - ./gradlew clean :codegen:runCodegen buildProps build -xtest
+  - ./gradlew clean
+  - ./gradlew :codegen:runCodegen buildProps build -xtest -xspotbugsTest
+  - ./gradlew publishToMavenLocal -xsignMavenPublication
