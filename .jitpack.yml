@@ -1,2 +1,4 @@
 jdk:
   - openjdk10
+before_install:
+  - ./gradlew :codegen:runCodegen buildProps
