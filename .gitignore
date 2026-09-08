@@ -39,3 +39,4 @@ oss.yaml
 examples/vagrant/asterisk/keys/*.key
 examples/vagrant/asterisk/keys/*.crt
 examples/vagrant/asterisk/keys/*.csr
+/target/

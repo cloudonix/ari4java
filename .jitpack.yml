@@ -2,6 +2,6 @@ jdk:
   - openjdk17
 install:
   - echo "Running a custom install command"
-  - ./gradlew clean
-  - ./gradlew :codegen:runCodegen buildProps build -xtest -xspotbugsTest
+  - ./gradlew clean :codegen:runCodegen build
+# - ./gradlew clean :codegen:runCodegen buildProps build -xtest -xspotbugsTest
   - ./gradlew publishToMavenLocal -xsignMavenPublication
