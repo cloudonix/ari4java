@@ -4,4 +4,4 @@ install:
   - echo "Running a custom install command"
   - ./gradlew clean :codegen:runCodegen build
 # - ./gradlew clean :codegen:runCodegen buildProps build -xtest -xspotbugsTest
-  - ./gradlew publishToMavenLocal -Pjitpack -x sign
+  - ./gradlew publishToMavenLocal -Pjitpack
